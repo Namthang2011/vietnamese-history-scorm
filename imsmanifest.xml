@@ -29,6 +29,16 @@ Provided by Rustici Software - www.scorm.com.
 
 	<resources>
 		<resource identifier="r1" type="webcontent" adlcp:scormtype="sco" href="course/index.htm">
+			<file href="course/assets/naq_irle.jpg"/>
+			<file href="course/assets/phanchautrinh.jpg"/>
+			<file href="course/assets/Mr._Phan_Boi_Chau.jpg"/>
+			<file href="course/assets/bac ho doc tuyen ngon.jpg"/>
+			<file href="course/assets/Vua_Hàm_Nghi_năm_1900.jpg"/>
+			<file href="course/assets/Victory_in_Battle_of_Dien_Bien_Phu.jpg"/>
+			<file href="course/assets/xoviet-baotanglichsu-1599868530382827919669.webp"/>
+			<file href="course/assets/Phụ_chính_đại_thần_Tôn_Thất_Thuyết.jpg"/>
+			<file href="course/assets/Ngày 31-8-1858, liên quân Pháp - Tây Ban Nha dưới sự chỉ huy của trung tướng Rigault de Genouilly đã có mặt tại cửa Hàn (Đà Nẵng) chuẩn bị tấn công.jpg"/>
+
 			<file href="course/index.htm" />
 		</resource>
 	</resources>
