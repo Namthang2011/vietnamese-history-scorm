@@ -39,7 +39,14 @@ Provided by Rustici Software - www.scorm.com.
 			<file href="course/assets/Phụ_chính_đại_thần_Tôn_Thất_Thuyết.jpg"/>
 			<file href="course/assets/Ngày 31-8-1858, liên quân Pháp - Tây Ban Nha dưới sự chỉ huy của trung tướng Rigault de Genouilly đã có mặt tại cửa Hàn (Đà Nẵng) chuẩn bị tấn công.jpg"/>
 
+			<file href="course/cdns/brython.min.js"/>
+			<file href="course/cdns/brython_stdlib.js"/>
+
+			<file href="course/scripts/__init__.py" />
+			<file href="course/scripts/course_handler.py" />
+
 			<file href="course/index.htm" />
+			<file href="course/test.htm" />
 		</resource>
 	</resources>
 </manifest>

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body>
+    <main class="m-3 flex flex-col space-y-4 text-xl">
+      <div class="flex rounded-xl border p-3 px-4 text-justify shadow">
+        <p id="description"></p>
+      </div>
+
+      <div class="grid grid-cols-1 gap-4 lg:grid-cols-2">
+        <button
+          id="a-button"
+          class="flex overflow-hidden rounded-xl border text-justify shadow hover:bg-gray-100"
+        >
+          <p class="flex items-center bg-red-600 p-3 px-4 text-2xl text-white">
+            A
+          </p>
+          <p id="a-desc" class="flex items-center p-3 px-4"></p>
+        </button>
+        <button
+          id="b-button"
+          class="flex overflow-hidden rounded-xl border text-justify shadow hover:bg-gray-100"
+        >
+          <p
+            class="flex items-center bg-yellow-500 p-3 px-4 text-2xl text-white"
+          >
+            B
+          </p>
+          <p id="b-desc" class="flex items-center p-3 px-4"></p>
+        </button>
+        <button
+          id="c-button"
+          class="flex overflow-hidden rounded-xl border text-justify shadow hover:bg-gray-100"
+        >
+          <p
+            class="flex items-center bg-green-600 p-3 px-4 text-2xl text-white"
+          >
+            C
+          </p>
+          <p id="c-desc" class="flex items-center p-3 px-4"></p>
+        </button>
+        <button
+          id="d-button"
+          class="flex overflow-hidden rounded-xl border text-justify shadow hover:bg-gray-100"
+        >
+          <p class="flex items-center bg-blue-600 p-3 px-4 text-2xl text-white">
+            D
+          </p>
+          <p id="d-desc" class="flex items-center p-3 px-4"></p>
+        </button>
+      </div>
+    </main>
+  </body>
+</html>

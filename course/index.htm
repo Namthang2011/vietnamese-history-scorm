@@ -6,10 +6,18 @@
     <title>Lịch sử Việt Nam</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <script type="text/javascript" src="./cdns/brython.min.js"></script>
+    <script type="text/javascript" src="./cdns/brython_stdlib.js"></script>
+
+    <script type="text/python" src="./scripts/course_handler.py"></script>
   </head>
 
   <body>
-    <main class="flex flex-col space-y-3 p-3 text-justify text-sm md:text-xl">
+    <main
+      id="main"
+      class="flex flex-col space-y-3 p-3 text-justify text-sm md:text-xl"
+    >
       <details class="flex overflow-hidden rounded-xl text-justify shadow">
         <summary
           class="transition-color cursor-pointer bg-red-600 p-3 px-4 text-white duration-200 hover:bg-red-700"
@@ -391,6 +399,15 @@
           </div>
         </div>
       </details>
+
+      <div>
+        <button
+          id="enter-test"
+          class="w-fit rounded-xl bg-fuchsia-600 p-2 px-3 text-white shadow hover:bg-fuchsia-700"
+        >
+          Kiểm tra
+        </button>
+      </div>
     </main>
   </body>
 </html>
