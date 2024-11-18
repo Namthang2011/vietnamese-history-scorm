@@ -44,6 +44,8 @@ Provided by Rustici Software - www.scorm.com.
 
 			<file href="course/scripts/__init__.py" />
 			<file href="course/scripts/course_handler.py" />
+			<file href="course/scripts/problems.py" />
+			<file href="course/scripts/test_handler.py" />
 
 			<file href="course/index.htm" />
 			<file href="course/test.htm" />
