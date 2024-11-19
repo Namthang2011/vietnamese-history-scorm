@@ -1,5 +1,15 @@
 from browser import document
 from problems import problems
+from scorm_wrapper import (
+    MAX_SCORE,
+    get_score,
+    set_score,
+    on_finish,
+    set_completion_status,
+)
+
+HALF_SCORE = MAX_SCORE / 2
+SCORE_PER_CORRECT = HALF_SCORE / len(problems)
 
 
 def reload_problem(index: int):
@@ -21,8 +31,26 @@ class TestHandler:
         self.current_problem = 0
 
     def on_test_ended(self):
+        test_score = self.correct_count * SCORE_PER_CORRECT
+        if self.correct_count == len(problems):
+            test_score = HALF_SCORE
+
+        course_score = get_score()
+        total_score = course_score + test_score
+
+        completion_status = "not attempted"
+        if total_score > 0:
+            completion_status = "completed"
+
+        set_completion_status(completion_status)
+        set_score(total_score)
+
+        on_finish()
+
         document["description"].html = f"""
         Bạn đã trả lời đúng <b>{self.correct_count}</b> câu.
+        <br>
+        Số điểm của bạn là <b>{total_score}</b>.
         """
 
         for answer_btn in ["a", "b", "c", "d"]:
