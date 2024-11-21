@@ -1,0 +1,13 @@
+details > summary,
+details > summary::-webkit-details-marker {
+  list-style: none;
+}
+
+details > summary:before {
+  content: "●";
+  padding-right: 5px;
+}
+
+ul > li:before {
+  content: "+";
+}

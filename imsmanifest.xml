@@ -48,6 +48,9 @@ Provided by Rustici Software - www.scorm.com.
 			<file href="course/scripts/scorm_wrapper.py" />
 			<file href="course/scripts/test_handler.py" />
 
+			<file href="course/styles/bullets.css"/>
+			<file href="course/styles/tailwind.css"/>
+
 			<file href="course/index.htm" />
 			<file href="course/test.htm" />
 		</resource>
