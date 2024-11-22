@@ -1,4 +1,4 @@
-from browser import window
+from browser import window  # type: ignore
 from typing import Literal
 
 MIN_SCORE = 0
@@ -24,7 +24,7 @@ class ScormWrapper:
     def set_completion_status(
         self, status: Literal["not attempted", "incomplete", "completed"]
     ) -> None:
-        _LMS_get_value("cmi.core.lesson_status", status)
+        _LMS_set_value("cmi.core.lesson_status", status)
         _LMS_commit()
 
     def get_score(self) -> int:
@@ -44,6 +44,8 @@ class ScormWrapper:
     def on_finish(self) -> None:
         _LMS_set_value("cmi.exit", "suspend")
         _LMS_set_value("adl.nav.request", "suspendAll")
+
+        _LMS_commit()
 
         _LMS_finish()
 

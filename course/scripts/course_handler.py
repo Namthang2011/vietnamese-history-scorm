@@ -1,4 +1,4 @@
-from browser import document
+from browser import document  # type: ignore
 from scorm_wrapper import MAX_SCORE, set_score, set_completion_status
 
 

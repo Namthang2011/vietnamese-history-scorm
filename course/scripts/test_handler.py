@@ -1,4 +1,4 @@
-from browser import document
+from browser import document  # type: ignore
 from problems import problems
 from scorm_wrapper import (
     MAX_SCORE,
